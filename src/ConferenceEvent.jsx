@@ -36,7 +36,7 @@ const ConferenceEvent = () => {
     dispatch(incrementAvQuantity(index));
 };
 
-const handleDecrementAvQuantity = (index) => {
+    const handleDecrementAvQuantity = (index) => {
     dispatch(decrementAvQuantity(index));
 };
 
@@ -170,8 +170,8 @@ const mealsTotalCost = calculateTotalCost("meals");
                 {!showItems
                     ?
                     (
-                        <div className="items-information">
-                             <div id="venue" className="venue_container container_main">
+                    <div className="items-information">
+                         <div id="venue" className="venue_container container_main">
         <div className="text">
  
           <h1>Venue Room Selection</h1>
@@ -184,7 +184,7 @@ const mealsTotalCost = calculateTotalCost("meals");
               </div>
               <div className="text">{item.name}</div>
               <div>${item.cost}</div>
-     <div className="button_container">
+        <div className="button_container">
         {venueItems[index].name === "Auditorium Hall (Capacity:200)" ? (
 
           <>
@@ -233,15 +233,15 @@ const mealsTotalCost = calculateTotalCost("meals");
       </div>
 
                             {/*Necessary Add-ons*/}
-                            <div id="addons" className="venue_container container_main">
+                        <div id="addons" className="venue_container container_main">
 
 
-                                <div className="text">
+                        <div className="text">
 
                                     <h1> Add-ons Selection</h1>
 
-                                </div>
-                                <div className="addons_selection">
+                        </div>
+                        <div className="addons_selection">
                                 {avItems.map((item, index) => (
     <div className="av_data venue_main" key={index}>
         <div className="img">
